@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte KOMBI KLUB za dodatne informacije, upite ili poslovne saradnje.">
+    <meta name="keywords"
+        content="Kombi Klub, kontakt, upiti, poslovna saradnja, autodelovi, vozila, komercijalna vozila, servis, kontakt forma, informacije">
+    <title>Kontakti</title>
+    <link rel="icon" href="stavke/slike/logo.png">
+    <link rel="stylesheet" href="stavke/css/kontakti.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="meni-logo" href="javascript:void(0)">KOMBI KLUB</a>
+        </div>
+
+        <nav id="meni-klasik">
+            <ul id="meni-stavke">
+                <li class="meni-stavka"><a href="index.html">Početna</a></li>
+                <li class="meni-stavka"><a href="asortiman.html">Asortiman</a></li>
+                <li class="meni-stavka"><a href="o-nama.html">O nama</a></li>
+                <li class="meni-stavka meni-aktivan"><a href="javascript:void(0)">Kontakti</a></li>
+            </ul>
+        </nav>
+
+        <div id="meni-burger" onclick="toggleMobileMenu(this)">
+            <div class="crta1"></div>
+            <div class="crta2"></div>
+            <div class="crta3"></div>
+            <ul id="burger-meni-stavke">
+                <li><a class="burger-meni-stavka" href="index.html">Početna</a></li>
+                <li><a class="burger-meni-stavka" href="asortiman.html">Asortiman</a></li>
+                <li><a class="burger-meni-stavka" href="o-nama.html">O nama</a></li>
+                <li class="meni-aktivan"><a class="burger-meni-stavka" href="javascript:void(0)">Kontakti</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="uvod">
+            <div id="uvod-slika">
+                <img id="pozadina" src="stavke/slike/kontakti-pozadina.png" alt="O nama pozadina">
+                <img id="uvod-slika-stavka" src="stavke/slike/logo.png" alt="Logo KOMBI KLUB">
+            </div>
+            <form id="forma">
+                <h1 id="naslov" class="meni-logo">KONTAKT</h1>
+                <div id="input">
+                    <div>
+                        <label for="ime">Ime*</label>
+                        <input class="forma-input" type="text" id="ime" name="ime" placeholder="Petar" required>
+                    </div>
+                    <div>
+                        <label for="prezime">Prezime*</label>
+                        <input class="forma-input" type="text" id="prezime" name="prezime" placeholder="Petrović"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email">Email adresa*</label>
+                        <input class="forma-input" type="email" id="email" name="email"
+                            placeholder="petarpetrovic@primer.com" pattern=".+@example\.com" required>
+                    </div>
+                    <div>
+                        <label for="kompanija">Kompanija</label>
+                        <input class="forma-input" type="email" id="kompanija" name="kompanija"
+                            placeholder="petarpetrovic@primer.com" pattern=".+@example\.com" required>
+                    </div>
+                    <div id="forma-dugme">
+                        <button type="submit" id="posalji-dugme">Pošalji</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-naslov">
+            <a class="meni-logo" href="javascript:void(0)" style="margin-left: 0;">KOMBI KLUB</a>
+        </div>
+        <ul>
+            <li class="footer-red">
+                <a href="https://www.instagram.com/" target="blank">
+                    <img class="footer-mreze-slike" src="stavke/slike/drustvene-mreze/instagram.svg"
+                        alt="Logo Instagram">
+                </a>
+                <a class="footer-stavka" href="index.html">Početna</a>
+            </li>
+            <li class="footer-red">
+                <a href="https://www.whatsapp.com/" target="blank">
+                    <img class="footer-mreze-slike" src="stavke/slike/drustvene-mreze/whatsapp.svg" alt="Logo WhatsApp">
+                </a>
+                <a class="footer-stavka" href="asortiman.html">Asortiman</a>
+            </li>
+            <li class="footer-red">
+                <a href="https://www.facebook.com/" target="blank">
+                    <img class="footer-mreze-slike" src="stavke/slike/drustvene-mreze/facebook.svg" alt="Logo Facebook">
+                </a>
+                <a class="footer-stavka" href="o-nama.html">O nama</a>
+            </li>
+            <li class="footer-red">
+                <a href="https://www.linkedin.com/" target="blank">
+                    <img class="footer-mreze-slike" src="stavke/slike/drustvene-mreze/linkedin.svg" alt="Logo LinkedIn">
+                </a>
+                <a class="footer-stavka footer-aktivan" href="javascript:void(0)">Kontakti</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="stavke/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'Gill Sans Ultra Bold';
+  src: url('../font/gill-sans-ultra-bold.woff2') format('woff2'),
+    url('../font/gill-sans-ultra-bold.woff') format('woff');
+}
+
+body {
+  margin: auto;
+  min-width: 320px;
+  max-width: 1920px;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #EC0000, crimson, #333);
+}
+
+#meni-klasik {
+  display: block;
+}
+
+#meni-stavke {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+#meni-burger {
+  display: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#burger-meni-stavke {
+  left: 0px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  border-top: 5px solid #BF0000;
+  margin-top: calc((4rem - (20px + 9px)) / 2);
+  background-color: #EC0000;
+}
+
+#meni-stavke a {
+  padding: 10px;
+}
+
+#meni-stavke .meni-aktivan a {
+  color: #EC0000;
+  border-radius: 1rem;
+  background-color: wheat;
+}
+
+#burger-meni-stavke .meni-aktivan a {
+  color: #EC0000;
+  background-color: wheat;
+}
+
+#naslov {
+  margin: 0;
+  color: wheat;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+#uvod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25vh 1rem;
+}
+
+#forma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  padding: 2.75vw 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  border: 3px solid wheat;
+  box-shadow: rgba(0, 0, 0, 0.75) -10px 10px 10px;
+  background: linear-gradient(135deg, crimson, #EC0000, #320000);
+}
+
+#input {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+#uvod-slika {
+  top: calc(5rem + 25vh - 10vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  width: 20vw;
+  aspect-ratio: 1;
+  position: absolute;
+}
+
+#pozadina {
+  width: 100%;
+}
+
+#uvod-slika-stavka {
+  z-index: 1;
+  width: 25%;
+  position: absolute;
+}
+
+#forma-dugme {
+  display: flex;
+  grid-column: 2;
+  justify-content: end;
+}
+
+#posalji-dugme {
+  width: 50%;
+  padding: 10px;
+  margin-top: 1rem;
+  color: wheat;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: 3px solid wheat;
+  background: linear-gradient(135deg, crimson, #EC0000, #320000);
+}
+
+.forma-input {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  background-color: tomato;
+}
+
+input:focus {
+  outline: none;
+  background-color: wheat;
+  box-shadow: 0 0 1rem wheat;
+}
+
+#pozadina:hover {
+  transition: 1s;
+  transform: rotate(1turn);
+}
+
+.meni-logo {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  font-family: 'Gill Sans Ultra Bold';
+}
+
+.crta1,
+.crta2,
+.crta3 {
+  width: 2rem;
+  height: 3px;
+  margin: 5px 0;
+  transition: 0.5s;
+  border-radius: 1rem;
+  background-color: wheat;
+}
+
+.otvori .crta1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.otvori .crta2 {
+  opacity: 0;
+}
+
+.otvori .crta3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.otvori #burger-meni-stavke {
+  display: flex;
+  flex-direction: column;
+}
+
+.meni-stavka {
+  margin-left: 20px;
+}
+
+.burger-meni-stavka {
+  width: 100%;
+  padding: 1rem 0;
+  display: block;
+  text-align: center;
+  border-bottom: 5px solid #BF0000;
+}
+
+.font-text {
+  color: #320000;
+  font-weight: bold;
+}
+
+.footer-naslov {
+  text-align: end;
+}
+
+.footer-red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer-aktivan {
+  color: black;
+}
+
+#uvod-slika-stavka:hover,
+.meni-stavka:not(.meni-aktivan):hover,
+.footer-stavka:not(.footer-aktivan):hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.footer-mreze-slike {
+  width: 3rem;
+  height: 3rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+}
+
+label {
+  color: wheat;
+  display: block;
+}
+
+header {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  max-width: 1920px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #EC0000;
+}
+
+footer {
+  padding: 1rem 2rem;
+  background-color: #EC0000;
+  border-top: 5px solid black;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 8rem;
+}
+
+@media (max-width: 480px) {
+  #meni-klasik {
+    display: none;
+  }
+
+  #meni-burger {
+    display: block;
+  }
+
+  #forma {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  #input {
+    grid-template-columns: 1fr;
+  }
+
+  #uvod-slika {
+    display: none;
+  }
+
+  #forma-dugme {
+    grid-column: 1;
+  }
+
+  #posalji-dugme {
+    width: 100%;
+  }
+
+  header {
+    height: 3rem;
+  }
+
+  footer {
+    border-top-left-radius: 4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #meni-klasik {
+    display: none;
+  }
+
+  #meni-burger {
+    display: block;
+  }
+
+  #forma {
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  #input {
+    grid-template-columns: 1fr;
+  }
+
+  #uvod-slika {
+    display: none;
+  }
+
+  #forma-dugme {
+    grid-column: 1;
+  }
+
+  #posalji-dugme {
+    width: 100%;
+  }
+
+  header {
+    height: 3.5rem;
+  }
+
+  footer {
+    border-top-left-radius: 6rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  #forma {
+    width: 60%;
+  }
+
+  .meni-logo {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  #forma {
+    width: 60%;
+  }
+
+  .meni-logo {
+    font-size: 1.75rem;
+  }
+}
