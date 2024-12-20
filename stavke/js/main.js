@@ -1,4 +1,4 @@
-function toggleMobileMenu(menu) {
+function aktivirajMeni(menu) {
     menu.classList.toggle('otvori');
 }
 
