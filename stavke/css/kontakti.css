@@ -131,24 +131,6 @@ body {
   background: linear-gradient(135deg, crimson, #EC0000, #320000);
 }
 
-.forma-input {
-  border: 0;
-  width: 100%;
-  padding: 10px;
-  color: black;
-  font-size: 1rem;
-  margin-top: 5px;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  background-color: tomato;
-}
-
-input:focus {
-  outline: none;
-  background-color: wheat;
-  box-shadow: 0 0 1rem wheat;
-}
-
 #pozadina:hover {
   transition: 1s;
   transform: rotate(1turn);
@@ -201,6 +183,22 @@ input:focus {
   border-bottom: 5px solid #BF0000;
 }
 
+.forma-input {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  background-color: tomato;
+}
+
+.forma-input::placeholder {
+  color: #333;
+}
+
 .font-text {
   color: #320000;
   font-weight: bold;
@@ -250,6 +248,12 @@ a {
 label {
   color: wheat;
   display: block;
+}
+
+input:focus {
+  outline: none;
+  background-color: wheat;
+  box-shadow: 0 0 1rem wheat;
 }
 
 header {
