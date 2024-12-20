@@ -180,7 +180,7 @@ body {
   white-space: nowrap;
 }
 
-.font-text {
+.font-podnaslov {
   color: black;
   font-weight: bold;
 }
@@ -212,7 +212,7 @@ body {
   height: 3rem;
 }
 
-p {
+h3 {
   margin: 0;
 }
 
