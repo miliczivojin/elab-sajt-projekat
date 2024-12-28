@@ -125,7 +125,7 @@ body {
   border-bottom: 5px solid black;
   border-bottom-right-radius: 8rem;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to bottom, #EC0000, #960000, #320000);
+  background: linear-gradient(to bottom, #EC0000, tomato, lightsalmon);
 }
 
 .pocetna-slika-brend {
