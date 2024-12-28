@@ -9,7 +9,7 @@ body {
   min-width: 320px;
   max-width: 1920px;
   font-family: sans-serif;
-  background: linear-gradient(to bottom, #EC0000, crimson, #333);
+  background-color: #333;
 }
 
 #meni-klasik {
@@ -68,6 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 25vh 1rem;
+  background: linear-gradient(to bottom, #EC0000, crimson, #333);
 }
 
 #forma {
@@ -253,7 +254,7 @@ input:focus {
 
 header {
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 4rem;
   display: flex;
@@ -281,6 +282,11 @@ footer {
 
   #meni-burger {
     display: block;
+  }
+
+  #uvod {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
   }
 
   #forma {
@@ -322,6 +328,11 @@ footer {
 
   #meni-burger {
     display: block;
+  }
+
+  #uvod {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
   }
 
   #forma {
