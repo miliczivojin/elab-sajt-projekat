@@ -230,7 +230,7 @@ a {
 }
 
 header.skrol {
-  background-color: #EC0000;
+  background-color: #333;
 }
 
 header {
@@ -245,7 +245,7 @@ header {
   max-width: 1920px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #00000000;
+  background-color: transparent;
 }
 
 footer {
