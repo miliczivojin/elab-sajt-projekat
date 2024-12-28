@@ -9,7 +9,7 @@ body {
   min-width: 320px;
   max-width: 1920px;
   font-family: sans-serif;
-  background-color: wheat;
+  background-color: tomato;
 }
 
 #meni-klasik {
@@ -92,6 +92,8 @@ body {
 }
 
 #uvod-text-stavka {
+  color: black;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -102,10 +104,10 @@ body {
 
 #infrastruktura-font {
   margin-top: 0;
+  color: white;
   margin-bottom: 3rem;
   text-align: center;
   white-space: nowrap;
-  color: #BF0000;
   font-weight: bold;
 }
 
@@ -164,20 +166,20 @@ body {
 }
 
 .sekcija-meni-dugme {
-  color: #BF0000;
+  color: #EC0000;
   text-align: center;
   font-weight: bold;
   font-size: 1.25rem;
   padding: 0.5rem 0.75rem;
   border-radius: 1.5rem;
-  border: 3px solid #BF0000;
+  border: 3px solid #EC0000;
   background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.75) -10px 10px 10px;
 }
 
 .sekcija-meni-dugme:hover {
   color: whitesmoke;
-  background-color: #BF0000;
+  background-color: #EC0000;
 }
 
 .infrastruktura-stavka {
@@ -209,7 +211,6 @@ body {
 
 .misija-vizija {
   padding: 5rem 0;
-  background-color: #CBCBCB80;
 }
 
 .misija-vizija-okvir {
@@ -246,11 +247,6 @@ body {
 
 .misija-vizija-naslov {
   margin: 0;
-}
-
-.font-text {
-  color: #320000;
-  font-weight: bold;
 }
 
 .footer-naslov {
@@ -308,7 +304,7 @@ header {
   max-width: 1920px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #EC0000;
+  background-color: tomato;
 }
 
 footer {
