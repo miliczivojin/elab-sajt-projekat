@@ -56,14 +56,16 @@ body {
 
 #pozadina-slika {
   width: 100%;
+  height: 100vh;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+  background: url('../slike/asortiman-pozadina.png') center/cover no-repeat;
 }
 
 #naslov {
-  color: wheat;
-  margin-top: 7rem;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
+  color: #EC0000;
   text-align: center;
+  font-family: 'Gill Sans Ultra Bold';
 }
 
 #asortiman {
@@ -265,6 +267,10 @@ footer {
     display: block;
   }
 
+  #naslov {
+    margin: 4rem 0;
+  }
+
   #asortiman {
     flex-direction: column;
   }
@@ -293,6 +299,10 @@ footer {
 
   #meni-burger {
     display: block;
+  }
+
+  #naslov {
+    margin: 4.5rem 0;
   }
 
   #asortiman {
