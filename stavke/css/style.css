@@ -241,6 +241,12 @@ footer {
   border-top-left-radius: 8rem;
 }
 
+@media (orientation: portrait) {
+  #logo {
+    align-self: flex-start;
+  }
+}
+
 @media (orientation: landscape) {
   #pocetna-slika-kombi {
     height: 60vh;
