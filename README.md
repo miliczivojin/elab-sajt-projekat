@@ -1,6 +1,6 @@
-Veb-sajt za autodelove
+# Veb-sajt za autodelove
 
-Ispitni projekat za Katedru za elektronsko poslovanje (**ElAB**, FON). Moderan, statički i potpuno responzivan sajt za prezentaciju kompanije i ponude autodelova.
+Ispitni projekat. Moderan, statički i potpuno responzivan sajt za prezentaciju kompanije i ponude autodelova.
 
 ## 🛠️ Tehnologije
 * **HTML5** 
